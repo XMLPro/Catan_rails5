@@ -25,4 +25,5 @@ tmp/
 .idea/
 public/
 bundle_bin/
-vendor/bundle
+vendor/bundle/
+/node_modules
