@@ -8,7 +8,7 @@
 module.exports = {
   data: function () {
     return {
-      message: "Hello Vue!"
+      message: "Hello Vue!" + Math.floor(Math.random() * 5 + 20)
     }
   }
 }
