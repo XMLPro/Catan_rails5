@@ -1,0 +1,20 @@
+<div>
+  <h1>○×ゲーム</h1>
+  <div id="mb" class="mb">
+    <h1>
+      now {{ turnName }}
+      <small v-if="winner">
+        winner: {{ winnerName }}
+        <button @click="restart">restart</button>
+      </small>
+    </h1>
+    <table>
+      <tbody>
+      <tr v-for="row in mbData">
+        <td v-for="col in row" class="mb-cell" @click="mbClick(col)" :class="col.to_s()">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
